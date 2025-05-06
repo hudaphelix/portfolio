@@ -1,0 +1,50 @@
+body{
+    background-color: blanchedalmond;
+}
+
+
+
+
+
+.navbar{
+    background-color: black;
+    color:white;
+    display:flex;
+    align-items: center;
+    padding:  20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    
+   
+}
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    color: orange;
+}
+.nav{
+    cursor:pointer;
+}
+.nav:hover{
+    text-decoration: underline;
+    color: orange;
+}
+.search{
+    display: flex;
+    
+}
+.search input{
+    background-color: white;
+    color: black;
+    padding: 5px;
+    cursor:pointer;
+}
+.search button{
+    background-color: yellow;
+    color: black;
+    padding:5px;
+}
+.search button:hover{
+    background-color:white ;
+}
