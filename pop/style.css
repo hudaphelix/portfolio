@@ -144,4 +144,58 @@ footer:hover{
 
 }
 
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .lol, .pop {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .lo1, .lo2, .lo3,
+    .lo4, .lo5, .lo6 {
+        width: 45%;
+        height: 200px;
+    }
+
+    .About p {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .lo1, .lo2, .lo3,
+    .lo4, .lo5, .lo6 {
+        width: 90%;
+        height: 180px;
+        margin: 10px auto;
+    }
+
+    .About h2 {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    .About p {
+        font-size: 0.95rem;
+        padding: 10px;
+        text-align: justify;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+}
+
 
