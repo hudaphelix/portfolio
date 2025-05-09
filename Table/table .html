@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>People List</title>
+  <style>
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid rgb(179, 87, 118); padding: 10px; text-align: left; }
+    th { cursor: pointer; background-color: palevioletred; }
+    body{background-color: pink;
+    text-align: center;}
+    input{
+        padding: 5px;
+        
+    }
+  </style>
+</head>
+<body>
+
+<h1><i>List of peoples</i></h1>
+
+<input type="text" id="searchInput" onkeyup="searchByName()" placeholder="Search by name...">
+
+<table id="peopleTable">
+  <thead>
+    <tr>
+      <th onclick="sortTable(0)">No. ▲▼</th>
+      <th>Status</th>
+      <th onclick="sortTable(2)">Full Name ▲▼</th>
+      <th>Roll No</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>1</td>
+      <td>Active</td>
+      <td>Rajat</td>
+      <td>001</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>002</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Active</td>
+      <td>Huda</td>
+      <td>003</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Active</td>
+      <td>Iqra</td>
+      <td>006</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Not Active</td>
+      <td>Sumaiya</td>
+      <td>009</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Not Active</td>
+      <td>Jennie</td>
+      <td>005</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Active</td>
+      <td>Lisa</td>
+      <td>008</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Not Active</td>
+      <td>Rose</td>
+      <td>087</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Active</td>
+      <td>Madhu</td>
+      <td>076</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Not Active</td>
+      <td>Abdul Rehman</td>
+      <td>075</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Active</td>
+      <td>Saima</td>
+      <td>046</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Not Active</td>
+      <td>Muskan</td>
+      <td>047</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Active</td>
+      <td>Khusi</td>
+      <td>034</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Not Active</td>
+      <td>Speed</td>
+      <td>078</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Active</td>
+      <td>kai</td>
+      <td>023</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Not Active</td>
+      <td>Abhishek</td>
+      <td>R002</td>
+    </tr>
+    
+    
+    
+  </tbody>
+</table>
+
+<script>
+function searchByName() {
+  const input = document.getElementById("searchInput").value.toLowerCase();
+  const table = document.getElementById("peopleTable");
+  const rows = table.getElementsByTagName("tr");
+
+  for (let i = 1; i < rows.length; i++) {
+    const nameCell = rows[i].getElementsByTagName("td")[2];
+    if (nameCell) {
+      const nameText = nameCell.textContent || nameCell.innerText;
+      rows[i].style.display = nameText.toLowerCase().includes(input) ? "" : "none";
+    }
+  }
+}
+
+let sortAsc = true;
+function sortTable(colIndex) {
+  const table = document.getElementById("peopleTable");
+  const rows = Array.from(table.rows).slice(1);
+  const sorted = rows.sort((a, b) => {
+    const cellA = a.cells[colIndex].innerText.toLowerCase();
+    const cellB = b.cells[colIndex].innerText.toLowerCase();
+
+    if (!isNaN(cellA) && !isNaN(cellB)) {
+      return sortAsc ? cellA - cellB : cellB - cellA;
+    }
+    return sortAsc ? cellA.localeCompare(cellB) : cellB.localeCompare(cellA);
+  });
+
+  sortAsc = !sortAsc;
+
+  for (let row of sorted) {
+    table.tBodies[0].appendChild(row);
+  }
+}
+</script>
+
+</body>
+</html>

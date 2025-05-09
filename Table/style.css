@@ -1,0 +1,20 @@
+table {
+    border-collapse: collapse; 
+    width: 100%; 
+   
+}
+th, td {
+     border: 1px solid rgb(179, 87, 118); 
+     padding: 10px; 
+     text-align: left;
+}
+th { 
+    cursor: pointer; 
+    background-color: palevioletred; 
+}
+body{background-color: pink;
+    text-align: center;
+}
+input{
+        padding: 5px;
+}
